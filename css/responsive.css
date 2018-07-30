@@ -5,7 +5,15 @@
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (max-width: 768px) {
-
+  .links-footer {
+    text-align: center;
+  }
+  .links-tile {
+    margin-top: 20px;
+  }
+  .company-tile {
+    margin-top: 10px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -16,6 +24,12 @@
   }
   .mid-header-wrapper {
     text-align: center;
+  }
+  .airlines-tile {
+    padding-left: 0;
+  }
+  .airlines-tile, .payments-tile {
+    margin-top: 20px;
   }
 }
 

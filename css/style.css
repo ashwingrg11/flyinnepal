@@ -33,6 +33,9 @@ li.main-item a{
   color: #fff !important;
   text-decoration: none;
 }
+.main-body {
+  background-color: #f6f6f6;
+}
 .mid-header-wrapper {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -102,4 +105,42 @@ form.flight-form button {
   text-transform: uppercase;
   padding: 4px 30px;
   border-radius: 0;
+}
+footer {
+  padding: 40px 0;
+  background-color: #fff;
+}
+footer h3 {
+  font-size: 14px;
+  text-transform: uppercase
+}
+.footer-tile:first-child {
+  padding-left: 0;
+}
+ul.footer-menu {
+  list-style: none;
+  padding-left: 0;
+}
+ul.footer-menu li {
+  line-height: 30px;
+}
+ul.footer-menu li a {
+  color: #4f5255;
+  text-decoration: none;
+  font-size: 15px;
+}
+ul.footer-menu li img {
+  height: 25px;
+}
+ul.footer-menu.partner-airlines li, ul.footer-menu.payment-partners li {
+  line-height: 38px;
+}
+section.bottom-footer {
+  border-top: 1px solid #ededed;
+}
+.footer-text-wrapper {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 0;
+  color: #545454;
 }
