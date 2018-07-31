@@ -17,7 +17,12 @@ function init_togglemenu() {
       $RETURN_DATE.hide();
   });
 }
+$(function() {
+  $('.datepicker').datepicker();
+});
+
 
 $(document).ready(function() {
   init_togglemenu();
+  // init_pickdate();
 })
