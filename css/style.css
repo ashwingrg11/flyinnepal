@@ -102,7 +102,7 @@ form.flight-form input, form.flight-form select {
   font-size: 14px;
 }
 form.flight-form input {
-  padding: 8spx;
+  padding: 8px;
 }
 form.flight-form button {
   text-transform: uppercase;
