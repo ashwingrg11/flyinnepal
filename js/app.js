@@ -18,7 +18,11 @@ function init_togglemenu() {
   });
 }
 $(function() {
-  $('.datepicker').datepicker();
+  var date = new Date();
+  date.setDate(date.getDate());
+  $('.datepicker').datepicker({
+    startDate : date
+  });
 });
 
 
