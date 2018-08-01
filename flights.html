@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css">
+
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <title>Fly in Nepal</title>
+  </head>
+  <body>
+    <div class="container-fluid no-padding">
+      <header>
+        <div class="container">
+          <!-- top header section -->
+          <div class="row">
+            <!-- left section starts -->
+            <div class="col-lg-6">
+              <div id="info">
+                <ul class="list-unstyled list-inline">
+                  <li><span><i class="fa fa-map-marker"></i></span> 02 Baneshwor, Kathmandu</li>
+                  <li><span><i class="fa fa-phone"></i></span> +977-1-4444999/98510208399</li>
+                </ul>
+              </div><!-- end info -->
+            </div><!-- left section ends here -->
+            <!-- right section starts -->
+            <div class="col-lg-6">
+              <div id="links">
+                <ul class="list-unstyled list-inline">
+                  <li><a href="#"><span><i class="fa fa-lock"></i></span> Login</a> &nbsp;&nbsp;|</li>
+                  <li class="main-item"><a href="#">home <i class="fa fa-angle-down"></i></a></li>
+                </ul>
+              </div><!-- end links -->
+            </div><!-- right section, column ends -->
+          </div><!-- .row, top header section ends -->
+        </div><!-- .container ends -->
+      </header>
+      <section class="bottom-header">
+        <div class="container mid-header-wrapper">
+          <div class="row">
+            <div class="col-md-12">
+              <a href="#"><img src="images/logo.png" alt="" class="main-logo"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 buttons-wrapper">
+              <button type="button" class="btn btn-secondary active-btn" data-target="btn1"><i class="fa fa-long-arrow-right"></i> one way</button>
+              <button type="button" class="btn btn-light way-btn" data-target="btn2"><i class="fa fa-exchange"></i> two way</button>
+              <button type="button" class="btn btn-light change-btn"><i class="fa fa-pencil-square-o"></i> Change Flight</button>
+            </div>
+          </div>
+          <div class="row filter-section">
+            <!-- flight booking form starts -->
+            <div class="col-lg-12 form-wrapper">
+              <form class="flight-form" method="" action="">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="form-group left-icon">
+                          <label>From Address</label>
+                          <select class="form-control">
+                            <option selected="">Kathmandu</option>
+                            <option>Bhadrapur</option>
+                            <option>Bhairahawa</option>
+                            <option>Bharatpur</option>
+                          </select>
+                        </div>
+                      </div><!-- end columns -->
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="form-group left-icon">
+                          <label>To Address</label>
+                          <select class="form-control">
+                            <option selected="">Pokhara</option>
+                            <option>Bhadrapur</option>
+                            <option>Bhairahawa</option>
+                            <option>Bharatpur</option>
+                          </select>
+                        </div>
+                      </div><!-- end columns -->
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="form-group left-icon">
+                          <label>Departure Date</label>
+                          <input type="text" class="form-control datepicker input-departure" placeholder="Departure Date">
+                        </div>
+                      </div><!-- end columns -->
+                      <div class="col-xs-12 col-sm-6 col-md-3 return-date">
+                        <div class="form-group left-icon">
+                          <label>Return Date</label>
+                          <input type="text" class="form-control datepicker" placeholder="Return Date" class="datepicker">
+                        </div>
+                      </div><!-- end columns -->
+                    </div><!-- end row -->
+                  </div><!-- end columns -->
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="form-group left-icon">
+                          <label>Adult (12+ yrs)</label>
+                          <select class="form-control">
+                            <option selected="">0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </div>
+                      </div><!-- end columns -->
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="form-group left-icon">
+                          <label>Child (0-11 yrs)</label>
+                          <select class="form-control">
+                            <option selected="">0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </div>
+                      </div><!-- end columns -->
+                      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <div class="form-group right-icon">
+                          <label>Nationality</label>
+                          <select class="form-control">
+                            <option selected="">Nepal</option>
+                            <option>India</option>
+                            <option>China</option>
+                            <option>England</option>
+                            <option>Germany</option>
+                          </select>
+                        </div>
+                      </div><!-- end columns -->
+                    </div><!-- end row -->
+                  </div><!-- end columns -->
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 search-btn">
+                    <button class="btn btn-orange"><i class="fa fa-hand-o-right"></i> &nbsp;Search</button>
+                  </div><!-- end columns -->
+                </div><!-- end row -->
+              </form><!-- flight booking form ends -->
+            </div><!-- .form-wrapper -->
+          </div><!-- .row ends -->
+          <div class="row search-title">
+            <h2><i class="fa fa-info-circle"></i> Search Results</h2>
+          </div>
+          <div class="row">
+            <!-- flight results section -->
+            <div class="col-lg-9 results-wrapper">
+              <!-- departure flights section starts -->
+              <div class="departure-flights">
+                <!-- table title section starts -->
+                <div class="title-section">
+                  <h4>Departure Flights: Kathmandu to Pokhara</h4>
+                  <span><i class="fa fa-calendar-o"></i> Friday 03-August-2018</span>
+                  <span class="adult"><i class="fa fa-user"></i> Adult : 1 Children : 3</span>
+                </div><!-- table title section ends here -->
+                <div class="table-wrapper">
+                  <table class="table table-hover flights-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Airline</th>
+                        <th scope="col">Depart</th>
+                        <th scope="col">Arrival</th>
+                        <th scope="col">Class</th>
+                        <th scope="col">Fare Type</th>
+                        <th scope="col">Fare</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>U4616 <br>Buddha Air</td>
+                        <td>07:50 <br>POKHARA</td>
+                        <td>08:15 <br>KATHMANDU</td>
+                        <td>Class Y</td>
+                        <td>Refundable <br>
+                          <span class="fare-breakup" data-toggle="tooltip" data-placement="top" title="Adult Fare: NPR 2815 Surcharge: NPR 1585 Tax: NPR 200 Commission: NPR 197.05">Fare-breakup</span>
+                        </td>
+                        <td>NPR 5100.0</td>
+                        <td>
+                          <input class="inp-cbx" id="cbx1" type="checkbox" style="display: none;"/>
+                          <label class="cbx" for="cbx1">
+                            <span>
+                              <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                              </svg>
+                            </span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>U4616 <br>Buddha Air</td>
+                        <td>07:50 <br>POKHARA</td>
+                        <td>08:15 <br>KATHMANDU</td>
+                        <td>Class Y</td>
+                        <td>Refundable <br>
+                          <span class="fare-breakup" data-toggle="tooltip" data-placement="top" title="Adult Fare: NPR 2815 Surcharge: NPR 1585 Tax: NPR 200 Commission: NPR 197.05">Fare-breakup</span>
+                        </td>
+                        <td>NPR 5100.0</td>
+                        <td>
+                          <input class="inp-cbx" id="cbx2" type="checkbox" style="display: none;"/>
+                          <label class="cbx" for="cbx2">
+                            <span>
+                              <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                              </svg>
+                            </span>
+                          </label>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><!-- table wrapper ends here -->
+              </div><!-- departure flights section ends -->
+              <!-- return flights section starts -->
+              <div class="return-flights">
+                <!-- table title section starts -->
+                <div class="title-section">
+                  <h4>Return Flights: Pokhara to Kathmandu</h4>
+                  <span><i class="fa fa-calendar-o"></i> Friday 03-August-2018</span>
+                  <span class="adult"><i class="fa fa-user"></i> Adult : 1 Children : 3</span>
+                </div><!-- table title section ends here -->
+                <div class="table-wrapper">
+                  <table class="table table-hover flights-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Airline</th>
+                        <th scope="col">Depart</th>
+                        <th scope="col">Arrival</th>
+                        <th scope="col">Class</th>
+                        <th scope="col">Fare Type</th>
+                        <th scope="col">Fare</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>U4616 <br>Buddha Air</td>
+                        <td>07:50 <br>POKHARA</td>
+                        <td>08:15 <br>KATHMANDU</td>
+                        <td>Class Y</td>
+                        <td>Refundable <br>
+                          <span class="fare-breakup" data-toggle="tooltip" data-placement="top" title="Adult Fare: NPR 2815 Surcharge: NPR 1585 Tax: NPR 200 Commission: NPR 197.05">Fare-breakup</span>
+                        </td>
+                        <td>NPR 5100.0</td>
+                        <td>
+                          <input class="inp-cbx" id="cbx3" type="checkbox" style="display: none;"/>
+                          <label class="cbx" for="cbx3">
+                            <span>
+                              <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                              </svg>
+                            </span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>U4616 <br>Buddha Air</td>
+                        <td>07:50 <br>POKHARA</td>
+                        <td>08:15 <br>KATHMANDU</td>
+                        <td>Class Y</td>
+                        <td>Refundable <br>
+                          <span class="fare-breakup" data-toggle="tooltip" data-placement="top" title="Adult Fare: NPR 2815 Surcharge: NPR 1585 Tax: NPR 200 Commission: NPR 197.05">Fare-breakup</span>
+                        </td>
+                        <td>NPR 5100.0</td>
+                        <td>
+                          <input class="inp-cbx" id="cbx4" type="checkbox" style="display: none;"/>
+                          <label class="cbx" for="cbx4">
+                            <span>
+                              <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                              </svg>
+                            </span>
+                          </label>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table><!-- return flights table -->
+                </div><!-- table wrapper ends -->
+              </div><!-- return flights section ends here -->
+            </div><!-- flight results section ends here -->
+            <!-- booking summary section starts -->
+            <div class="col-lg-3 booking-wrapper">
+              <h3>Booking Summary</h3>
+              <div class="summary-wrapper">
+                <h4>kathmandu <i class="fa fa-long-arrow-right"></i> pokhara</h4>
+                <ul class="booking-summary">
+                  <li>
+                    <span>U4615-KTM-PKR-10-AUG-2018-06:50</span>
+                  </li>
+                  <li>
+                    <span>Fare Adult</span>
+                    <span>2315 X 1 = 2315</span>
+                  </li>
+                  <li>
+                    <span>Fare Child</span>
+                    <span>2315 X 4 = 9260</span>
+                  </li>
+                  <li>
+                    <span>Fuel Surcharge</span>
+                    <span>1585 X 5 = 7925</span>
+                  </li>
+                  <li>
+                    <span>Tax</span>
+                    <span>200 X 5 = 1000</span>
+                  </li>
+                  <li class="total-item">
+                    <span>Total</span>
+                    <span>20500</span>
+                  </li>
+                </ul>
+              </div><!-- .summary-wrapper ends -->
+              <div class="summary-wrapper">
+                <h4>pokhara <i class="fa fa-long-arrow-right"></i> kathmandu</h4>
+                <ul class="booking-summary">
+                  <li>
+                    <span>U4615-KTM-PKR-10-AUG-2018-06:50</span>
+                  </li>
+                  <li>
+                    <span>Fare Adult</span>
+                    <span>2315 X 1 = 2315</span>
+                  </li>
+                  <li>
+                    <span>Fare Child</span>
+                    <span>2315 X 4 = 9260</span>
+                  </li>
+                  <li>
+                    <span>Fuel Surcharge</span>
+                    <span>1585 X 5 = 7925</span>
+                  </li>
+                  <li>
+                    <span>Tax</span>
+                    <span>200 X 5 = 1000</span>
+                  </li>
+                  <li class="total-item">
+                    <span>Total</span>
+                    <span>20500</span>
+                  </li>
+                </ul>
+              </div><!-- .summary-wrapper ends -->
+              <div class="summary-wrapper grand-total">
+                <ul class="booking-summary">
+                  <li class="total-item"><span>Grand Total</span><span>41000</span></li>
+                  <li><button type="button" class="btn btn-secondary book-now-btn"><i class="fa fa-paper-plane-o"></i> BOOK NOW</button></li>
+                </ul>
+              </div>
+            </div><!-- booking info wrapper ends here -->
+          </div><!-- .row ends -->
+        </div><!-- .container ends -->
+      </section>
+      <!-- footer, 4tiles section -->
+      <footer class="links-footer">
+        <div class="container">
+          <div class="row">
+            <!-- our company section starts -->
+            <div class="col-lg-3 col-md-6 col-sm-6 footer-tile company-tile">
+              <h3>Our Company</h3>
+              <ul class="footer-menu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div><!-- our company section ends here -->
+            <!-- site links -->
+            <div class="col-lg-3 col-md-6 col-sm-6 footer-tile links-tile">
+              <h3>Site Links</h3>
+              <ul class="footer-menu">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">TV Advertisement</a></li>
+                <li><a href="#">Career Opportunity</a></li>
+              </ul>
+            </div><!-- site links section ends -->
+            <!-- partner airlines -->
+            <div class="col-lg-3 col-md-6 col-sm-6 footer-tile airlines-tile">
+              <h3>Partner Airlines</h3>
+              <ul class="footer-menu partner-airlines">
+                <li><img src="images/yetiair.png" alt="">&nbsp;&nbsp;<img src="images/sauryaair.png" alt=""></li>
+                <li><img src="images/buddha.png" alt="">&nbsp;&nbsp;<img src="images/simrik.png" alt=""></li>
+                <li><img src="images/shreeair.png" alt="">&nbsp;&nbsp;<img src="images/gomaair.png" alt=""></li>
+              </ul>
+            </div><!-- partner airlines section ends -->
+            <!-- payment partners -->
+            <div class="col-lg-3 col-md-6 col-sm-6 footer-tile payments-tile">
+              <h3>Payment Partners</h3>
+              <ul class="footer-menu payment-partners">
+                <li><img src="images/esewa.png" alt=""></li>
+                <li><img src="images/visa-and-mastercard.png" alt=""></li>
+              </ul>
+            </div><!-- payment partners section ends here -->
+          </div><!-- .row ends -->
+        </div><!-- .container ends -->
+      </footer>
+      <!-- footer copyright section -->
+      <section class="bottom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 footer-text-wrapper">
+              <span>Copyright &copy; 2018 flyinnepal.com. All rights reserved.</span>
+            </div>
+          </div><!-- .row ends -->
+        </div><!-- .container ends -->
+      </section><!-- footer copyright section ends -->
+    </div><!-- .container-fluid ends -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

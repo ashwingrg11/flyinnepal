@@ -30,3 +30,7 @@ $(document).ready(function() {
   init_togglemenu();
   // init_pickdate();
 })
+$(function () {
+  // $('[data-toggle=tooltip]').tooltip({trigger: 'manual'}).tooltip('show');
+  $('[data-toggle="tooltip"]').tooltip();
+})

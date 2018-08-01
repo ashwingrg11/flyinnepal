@@ -1,6 +1,8 @@
 /* Small devices (landscape phones, 544px and up) */
 @media (max-width: 544px) {
-
+  .buttons-wrapper button {
+    padding: 6px 10px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -13,6 +15,9 @@
   }
   .company-tile {
     margin-top: 10px;
+  }
+  .booking-wrapper, .results-wrapper {
+    padding: 10px !important;
   }
 }
 
@@ -30,6 +35,9 @@
   }
   .airlines-tile, .payments-tile {
     margin-top: 20px;
+  }
+  .booking-wrapper, .results-wrapper {
+    padding: 0;
   }
 }
 
