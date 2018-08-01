@@ -44,14 +44,15 @@ function initFlightToggleMenu() {
       icon.addClass('fa-pencil-square-o');
       $SEARCH_SECTION.hide();
     }
-    //$(this).removeClass('active-btn btn-secondary').addClass('change-active');
-    // $BUTTON.removeClass('way-btn').addClass('active-btn btn-secondary');
   });
 }
 //function to deselect multiple checkboxes
 function deSelectMultipleCheckBoxes() {
-  $('input:checkbox').on('click', function() {
-    $('input:checkbox').not(this).prop('checked', false);
+  $('.inp-dep').on('click', function() {
+    $('.inp-dep').not(this).prop('checked', false);
+  });
+  $('.inp-ret').on('click', function() {
+    $('.inp-ret').not(this).prop('checked', false);
   });
 }
 $(document).ready(function() {
