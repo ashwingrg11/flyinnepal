@@ -32,14 +32,23 @@ function initFlightToggleMenu() {
   var $CHANGE_FLIGHT_BTN = $('button.change-btn'),
       $SEARCH_SECTION = $('div.filter-section');
 
-  $CHANGE_FLIGHT_BTN.on('click', function() {
-    $(this).removeClass('active-btn btn-secondary').addClass('change-active');
+  $CHANGE_FLIGHT_BTN.on('click', function(e) {
+    var icon = $(this).find('i');
+    if (icon.hasClass('fa-pencil-square-o')) {
+      icon.removeClass('fa-pencil-square-o');
+      icon.addClass('fa-times-circle');
+      $SEARCH_SECTION.show();
+    }
+    else {
+      icon.removeClass('fa-times-circle');
+      icon.addClass('fa-pencil-square-o');
+      $SEARCH_SECTION.hide();
+    }
+    //$(this).removeClass('active-btn btn-secondary').addClass('change-active');
     // $BUTTON.removeClass('way-btn').addClass('active-btn btn-secondary');
-    $SEARCH_SECTION.show();
   });
 }
 $(document).ready(function() {
   init_togglemenu();
   initFlightToggleMenu();
 })
-
