@@ -84,8 +84,8 @@ div.return-date {
   background-color: #efefef;
   border-color: #efefef;
   outline: 0;
+  color: #212529;
 }
-
 .info-wrapper > h1 {
   font-size: 1.8em;
 }
@@ -179,7 +179,7 @@ section.bottom-footer {
   padding-left: 0;
 }
 ul.booking-summary li {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 25px;
 }
 ul.booking-summary li span:nth-child(2) {
@@ -230,14 +230,28 @@ table.flights-table {
   text-align: center;
   /* letter-spacing: -0.6px; */
 }
+table.flights-table thead {
+  background-color: #b71431;
+  color: #fff;
+  border-color: #b71431;
+}
 table.flights-table th {
   font-weight: 600;
   border-top: 2px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
 }
 table.flights-table td {
+  font-weight: 600;
   vertical-align: middle;
   border-bottom: 1px solid #efefef;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+}
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(255, 9, 9, 0.05);
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 1);
 }
 
 /** checkbox css **/
@@ -317,4 +331,7 @@ table.flights-table td {
 }
 .fare-breakup {
   cursor: pointer;
+}
+.datepicker-days table th {
+  font-weight: 600;
 }
