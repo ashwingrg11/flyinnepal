@@ -48,7 +48,14 @@ function initFlightToggleMenu() {
     // $BUTTON.removeClass('way-btn').addClass('active-btn btn-secondary');
   });
 }
+//function to deselect multiple checkboxes
+function deSelectMultipleCheckBoxes() {
+  $('input:checkbox').on('click', function() {
+    $('input:checkbox').not(this).prop('checked', false);
+  });
+}
 $(document).ready(function() {
   init_togglemenu();
   initFlightToggleMenu();
+  deSelectMultipleCheckBoxes();
 })
