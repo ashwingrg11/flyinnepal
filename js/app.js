@@ -1,7 +1,6 @@
-var $BUTTON_WRAPPER = $('buttons-wrapper'),
-    $BUTTON = $('button.btn'),
+var $BUTTON = $('button.btn-common'),
     $RETURN_DATE = $('div.return-date');
-//toggle menu for active class and hide return date when one-way is active
+//toggle menu for active class and hide return date when one-way (nav menu) is active
 function init_togglemenu() {
   $RETURN_DATE.hide();
   $BUTTON.on('click', function(e) {
@@ -17,20 +16,30 @@ function init_togglemenu() {
       $RETURN_DATE.hide();
   });
 }
+//self invoking function to perform miscellaneous tasks
 $(function() {
   var date = new Date();
   date.setDate(date.getDate());
   $('.datepicker').datepicker({
     startDate : date
   });
+  $('[data-toggle="tooltip"]').tooltip();
 });
 
 
+//toggle nav menu in flight page
+function initFlightToggleMenu() {
+  var $CHANGE_FLIGHT_BTN = $('button.change-btn'),
+      $SEARCH_SECTION = $('div.filter-section');
+
+  $CHANGE_FLIGHT_BTN.on('click', function() {
+    $(this).removeClass('active-btn btn-secondary').addClass('change-active');
+    // $BUTTON.removeClass('way-btn').addClass('active-btn btn-secondary');
+    $SEARCH_SECTION.show();
+  });
+}
 $(document).ready(function() {
   init_togglemenu();
-  // init_pickdate();
+  initFlightToggleMenu();
 })
-$(function () {
-  // $('[data-toggle=tooltip]').tooltip({trigger: 'manual'}).tooltip('show');
-  $('[data-toggle="tooltip"]').tooltip();
-})
+

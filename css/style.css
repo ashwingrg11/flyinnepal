@@ -157,7 +157,7 @@ section.bottom-footer {
   border-color: #403e3c;
 }
 .filter-section {
-  /* display: none; */
+   display: none;
 }
 .search-title {
   padding: 20px 0;
