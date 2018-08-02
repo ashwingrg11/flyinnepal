@@ -162,13 +162,17 @@ section.bottom-footer {
 .search-title {
   padding: 20px 0;
 }
+.search-btn, .search-btn:hover {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+}
 .search-title > h2{
   font-size: 23px;
   color: #292929;
 }
 .booking-wrapper h3 {
   font-size: 23px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 .summary-wrapper h4 {
   text-transform: uppercase;
@@ -180,7 +184,7 @@ section.bottom-footer {
 }
 ul.booking-summary li {
   font-size: 13px;
-  line-height: 25px;
+  line-height: 20px;
 }
 ul.booking-summary li span:nth-child(2) {
   float: right;
@@ -220,7 +224,7 @@ ul.booking-summary li.total-item {
   font-size: 15px;
 }
 .grand-total ul li {
-  line-height: 40px;
+  line-height: 25px;
 }
 .flights-table {
   background-color: #fff;
@@ -247,6 +251,10 @@ table.flights-table td {
   font-size: 13px;
   letter-spacing: -0.5px;
 }
+table.flights-table td img {
+  height: 22px;
+  border-radius: 50%;
+}
 .table-striped tbody tr:nth-of-type(even) {
     background-color: rgba(255, 9, 9, 0.05);
 }
@@ -260,6 +268,15 @@ table.flights-table td {
   -webkit-user-select: none;
   user-select: none;
   cursor: pointer;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+select::-ms-expand {
+  display: none;
 }
 .cbx span {
   display: inline-block;
@@ -332,6 +349,15 @@ table.flights-table td {
 .fare-breakup {
   cursor: pointer;
 }
+.fare-breakup-wrapper {
+  display: none;
+}
 .datepicker-days table th {
   font-weight: 600;
 }
+/** booking confirm **/
+.confirm-title h2 {
+  font-size: 25px;
+}
+
+/** booking confirm **/
