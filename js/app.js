@@ -51,16 +51,43 @@ function deSelectMultipleCheckBoxes() {
   $('.inp-dep').on('click', function() {
 
     $('.inp-dep').not(this).prop('checked', false);
-    var $DEPT_FARE = $(this).closest('tr').find('td:nth-child(6) span').text(),
+    var $PARENT_ROW = $(this).closest('tr'),
+        $ADULT_FARE = $PARENT_ROW.find('td span.adult-fare').text(),
+        $CHILD_FARE = $PARENT_ROW.find('td span.child-fare').text(),
+        $SURCHARGE = $PARENT_ROW.find('td span.surcharge').text(),
+        $TAX = $PARENT_ROW.find('td span.tax').text(),
+        $COMMISSION = $PARENT_ROW.find('td span.commission').text(),
+        $DEPT_FARE = $PARENT_ROW.find('td:nth-child(7) span.dep-num-price').text(),
         $DEPT_SUMMARY = $('.summary-wrapper ul.booking-summary li.total-item #dep-total');
+
+    $('.dept-fare-adult-summary').html($ADULT_FARE);
+    $('.dept-fare-child-summary').html($CHILD_FARE);
+    $('.dept-fare-surcharge-summary').html($SURCHARGE);
+    $('.dept-fare-tax-summary').html($TAX);
+    $('.dept-fare-commission-summary').html($COMMISSION);
     $DEPT_SUMMARY.html($DEPT_FARE);
+
+
   });
   $('.inp-ret').on('click', function() {
     $('.inp-ret').not(this).prop('checked', false);
-    var $RET_FARE = $(this).closest('tr').find('td:nth-child(6) span').text(),
+    var $PARENT_ROW = $(this).closest('tr'),
+        $ADULT_FARE = $PARENT_ROW.find('td span.adult-fare').text(),
+        $CHILD_FARE = $PARENT_ROW.find('td span.child-fare').text(),
+        $SURCHARGE = $PARENT_ROW.find('td span.surcharge').text(),
+        $TAX = $PARENT_ROW.find('td span.tax').text(),
+        $COMMISSION = $PARENT_ROW.find('td span.commission').text(),
+        $RET_FARE = $PARENT_ROW.find('td:nth-child(7) span.ret-num-price').text(),
         $RET_SUMMARY = $('.summary-wrapper ul.booking-summary li.total-item #ret-total');
+
+    $('.ret-fare-adult-summary').html($ADULT_FARE);
+    $('.ret-fare-child-summary').html($CHILD_FARE);
+    $('.ret-fare-surcharge-summary').html($SURCHARGE);
+    $('.ret-fare-tax-summary').html($TAX);
+    $('.ret-fare-commission-summary').html($COMMISSION);
     $RET_SUMMARY.html($RET_FARE);
   });
+
 }
 $(document).ready(function() {
   init_togglemenu();
