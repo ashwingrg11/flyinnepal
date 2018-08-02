@@ -183,7 +183,7 @@
                         <td>Refundable <br>
                           <p class="fare-breakup" data-toggle="tooltip" data-placement="top" title="Adult Fare: NPR 2815 Surcharge: NPR 1585 Tax: NPR 200 Commission: NPR 197.05">Fare-breakup</p>
                         </td>
-                        <td>NPR 5100.0</td>
+                        <td class="fare-dep-price">NPR <span class="num-price">5100.0</span></td>
                         <td>
                           <input class="inp-cbx inp-dep" id="cbx1" type="checkbox" style="display: none;"/>
                           <label class="cbx" for="cbx1">
@@ -203,7 +203,7 @@
                         <td>Refundable <br>
                           <p class="fare-breakup" data-toggle="tooltip" data-placement="top" title="Adult Fare: NPR 2815 Surcharge: NPR 1585 Tax: NPR 200 Commission: NPR 197.05">Fare-breakup</p>
                         </td>
-                        <td>NPR 5100.0</td>
+                        <td class="fare-dep-price">NPR <span class="num-price">6100.0</span></td>
                         <td>
                           <input class="inp-cbx inp-dep" id="cbx2" type="checkbox" style="display: none;"/>
                           <label class="cbx" for="cbx2">
@@ -223,7 +223,7 @@
                         <td>Refundable <br>
                           <p class="fare-breakup" data-toggle="tooltip" data-placement="top" title="Adult Fare: NPR 2815 Surcharge: NPR 1585 Tax: NPR 200 Commission: NPR 197.05">Fare-breakup</p>
                         </td>
-                        <td>NPR 5100.0</td>
+                        <td class="fare-dep-price">NPR <span class="num-price">7100.0</span></td>
                         <td>
                           <input class="inp-cbx inp-dep" id="cbx5" type="checkbox" style="display: none;"/>
                           <label class="cbx" for="cbx5">
@@ -269,7 +269,7 @@
                         <td>Refundable <br>
                           <p class="fare-breakup" data-toggle="tooltip" data-placement="top" title="Adult Fare: NPR 2815 Surcharge: NPR 1585 Tax: NPR 200 Commission: NPR 197.05">Fare-breakup</p>
                         </td>
-                        <td>NPR 5100.0</td>
+                        <td class="fare-ret-price">NPR <span>5100.0</span></td>
                         <td>
                           <input class="inp-cbx inp-ret" id="cbx3" type="checkbox" style="display: none;"/>
                           <label class="cbx" for="cbx3">
@@ -289,7 +289,7 @@
                         <td>Refundable <br>
                           <p class="fare-breakup" data-toggle="tooltip" data-placement="top" title="Adult Fare: NPR 2815 Surcharge: NPR 1585 Tax: NPR 200 Commission: NPR 197.05">Fare-breakup</p>
                         </td>
-                        <td>NPR 5100.0</td>
+                        <td class="fare-ret-price">NPR <span>6100.0</span></td>
                         <td>
                           <input class="inp-cbx inp-ret" id="cbx4" type="checkbox" style="display: none;"/>
                           <label class="cbx" for="cbx4">
@@ -309,7 +309,7 @@
                         <td>Refundable <br>
                           <p class="fare-breakup" data-toggle="tooltip" data-placement="top" title="Adult Fare: NPR 2815 Surcharge: NPR 1585 Tax: NPR 200 Commission: NPR 197.05">Fare-breakup</p>
                         </td>
-                        <td>NPR 5100.0</td>
+                        <td class="fare-ret-price">NPR <span>7100.0</span></td>
                         <td>
                           <input class="inp-cbx inp-ret" id="cbx6" type="checkbox" style="display: none;"/>
                           <label class="cbx" for="cbx6">
@@ -353,7 +353,7 @@
                   </li>
                   <li class="total-item">
                     <span>Total</span>
-                    <span>20500</span>
+                    <span id="dep-total">20500</span>
                   </li>
                 </ul>
               </div><!-- .summary-wrapper ends -->
@@ -381,7 +381,7 @@
                   </li>
                   <li class="total-item">
                     <span>Total</span>
-                    <span>20500</span>
+                    <span id="ret-total">20500</span>
                   </li>
                 </ul>
               </div><!-- .summary-wrapper ends -->

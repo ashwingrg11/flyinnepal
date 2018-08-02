@@ -49,10 +49,17 @@ function initFlightToggleMenu() {
 //function to deselect multiple checkboxes
 function deSelectMultipleCheckBoxes() {
   $('.inp-dep').on('click', function() {
+
     $('.inp-dep').not(this).prop('checked', false);
+    var $DEPT_FARE = $(this).closest('tr').find('td:nth-child(6) span').text(),
+        $DEPT_SUMMARY = $('.summary-wrapper ul.booking-summary li.total-item #dep-total');
+    $DEPT_SUMMARY.html($DEPT_FARE);
   });
   $('.inp-ret').on('click', function() {
     $('.inp-ret').not(this).prop('checked', false);
+    var $RET_FARE = $(this).closest('tr').find('td:nth-child(6) span').text(),
+        $RET_SUMMARY = $('.summary-wrapper ul.booking-summary li.total-item #ret-total');
+    $RET_SUMMARY.html($RET_FARE);
   });
 }
 $(document).ready(function() {
