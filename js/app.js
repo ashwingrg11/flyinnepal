@@ -46,6 +46,12 @@ function initFlightToggleMenu() {
     }
   });
 }
+function getDeptTotal() {
+  var $CHECKBOX = $('input[type=checkbox]:checked'),
+      $GET_DEPT_VALUE = $CHECKBOX.closest('tr').find('td:nth-child(7) span.dep-num-price').text(),
+      $NUM_VALUE = parseInt($GET_DEPT_VALUE)||0;
+      return $NUM_VALUE;
+}
 //function to deselect multiple checkboxes
 function deSelectMultipleCheckBoxes() {
   $('.inp-dep').on('click', function() {
@@ -61,6 +67,7 @@ function deSelectMultipleCheckBoxes() {
         $TAX = $PARENT_ROW.find('td span.tax').text(),
         $COMMISSION = $PARENT_ROW.find('td span.commission').text(),
         $DEPT_FARE = $PARENT_ROW.find('td:nth-child(7) span.dep-num-price').text(),
+        $BOOKING_SUMMARY = $('.common-dept'),
         $DEPT_SUMMARY = $('.summary-wrapper ul.booking-summary li.total-item .dep-total');
 
     $('.dyn-dept-flight-no').html($FLIGHT_NO);
@@ -71,13 +78,14 @@ function deSelectMultipleCheckBoxes() {
     $('.dept-fare-tax-summary').html($TAX);
     $('.dept-fare-commission-summary').html($COMMISSION);
     $DEPT_SUMMARY.html($DEPT_FARE);
-    var $BOOKING_SUMMARY = $('.common-dept');
-  if(!(this).checked){
+    if(!(this).checked){
       if(!$BOOKING_SUMMARY.hasClass('dept-common-wrapper'))
         $BOOKING_SUMMARY.addClass('dept-common-wrapper');
     }
     else {
       $BOOKING_SUMMARY.removeClass('dept-common-wrapper');
+      getDeptTotal();
+      // debugger;
     }
   });
   //return flight select checkbox event
@@ -93,6 +101,7 @@ function deSelectMultipleCheckBoxes() {
         $TAX = $PARENT_ROW.find('td span.tax').text(),
         $COMMISSION = $PARENT_ROW.find('td span.commission').text(),
         $RET_FARE = $PARENT_ROW.find('td:nth-child(7) span.ret-num-price').text(),
+        $BOOKING_SUMMARY = $('.common-ret'),
         $RET_SUMMARY = $('.summary-wrapper ul.booking-summary li.total-item .ret-total');
 
     $('.dyn-ret-flight-no').html($FLIGHT_NO);
@@ -103,15 +112,37 @@ function deSelectMultipleCheckBoxes() {
     $('.ret-fare-tax-summary').html($TAX);
     $('.ret-fare-commission-summary').html($COMMISSION);
     $RET_SUMMARY.html($RET_FARE);
-    var $BOOKING_SUMMARY = $('.common-ret');
+
+
     if(!(this).checked){
       if(!$BOOKING_SUMMARY.hasClass('dept-common-wrapper'))
         $BOOKING_SUMMARY.addClass('dept-common-wrapper');
     }
     else {
       $BOOKING_SUMMARY.removeClass('dept-common-wrapper');
+      getRetTotal();
     }
   });
+  $("input[type=checkbox]").on('click', function() {
+    if($('.inp-dep').is(':checked') && $('.inp-ret').is(':checked')) {
+      var $TOTAL = calculateGrandTotal();
+      $('span.grand-total').html($TOTAL);
+    }
+  });
+
+}
+
+function getRetTotal() {
+  var $CHECKBOX = $('input[type=checkbox]:checked'),
+      $GET_RET_VALUE = $CHECKBOX.closest('tr').find('td:nth-child(7) span.ret-num-price').text(),
+      $NUM_VALUE = parseInt($GET_RET_VALUE)||0;
+      return $NUM_VALUE;
+}
+function calculateGrandTotal() {
+  var $DEP_SUM = getDeptTotal(),
+      $RET_SUM = getRetTotal();
+  var sum = $DEP_SUM + $RET_SUM;
+  return sum;
 }
 $(document).ready(function() {
   init_togglemenu();

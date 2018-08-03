@@ -186,7 +186,7 @@ ul.booking-summary li {
   font-size: 13px;
   line-height: 20px;
 }
-ul.booking-summary li span:nth-child(2) {
+ul.booking-summary li > span:nth-child(2) {
   float: right;
 }
 ul.booking-summary li.total-item {
