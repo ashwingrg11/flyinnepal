@@ -3,6 +3,13 @@
   .buttons-wrapper button {
     padding: 6px 10px;
   }
+  .contact-details {
+    height: 230px !important;
+  }
+  .confirm-title, .confirm-title+.row {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -18,6 +25,9 @@
   }
   .booking-wrapper, .results-wrapper {
     padding: 10px !important;
+  }
+  .contact-details {
+    height: 230px;
   }
 }
 
@@ -38,6 +48,9 @@
   }
   .booking-wrapper, .results-wrapper {
     padding: 0;
+  }
+  .contact-details {
+    height: 155px;
   }
 }
 
