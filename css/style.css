@@ -342,6 +342,9 @@ select::-ms-expand {
     transform: scale(0.9);
   }
 }
+.dept-common-wrapper {
+  display:none;
+}
 /** checkbox css ends **/
 .tootltip {
   width: 400px;
