@@ -60,28 +60,30 @@ $(document).ready(function() {
   initFlightToggleMenu();
   deSelectMultipleCheckBoxes();
   $(window).scroll(function () {
-    if ($(window).width() > 992) {
-      var scrollTop = $(window).scrollTop(),
-        elementOffset = $('.departure-flights').offset().top,
-        distance_top = (elementOffset - scrollTop);
-      var measure = $('.links-footer'),
-        windowHeight = $(window).height(),
-        scrollDistance = $(window).scrollTop(),
-        divOffsetTop = measure.offset().top,
-        delta = divOffsetTop - (scrollDistance + windowHeight);
-      var new_d = $('.grand-total').offset().top - $('.links-footer').offset().top
-      if (distance_top < 0) {
-        if (delta < -120) {
-          $('.summary-main-wrapper').css('position', 'fixed');
-          $('.summary-main-wrapper').css('top', '-30px');
+    if (typeof $('.departure-flights').html() !== 'undefined') {
+      if ($(window).width() > 992) {
+        var scrollTop = $(window).scrollTop(),
+          elementOffset = $('.departure-flights').offset().top,
+          distance_top = (elementOffset - scrollTop);
+        var measure = $('.links-footer'),
+          windowHeight = $(window).height(),
+          scrollDistance = $(window).scrollTop(),
+          divOffsetTop = measure.offset().top,
+          delta = divOffsetTop - (scrollDistance + windowHeight);
+        var new_d = $('.grand-total').offset().top - $('.links-footer').offset().top
+        if (distance_top < 0) {
+          if (delta < -120) {
+            $('.summary-main-wrapper').css('position', 'fixed');
+            $('.summary-main-wrapper').css('top', '-30px');
+          }
+          else {
+            $('.summary-main-wrapper').css('position', 'fixed');
+            $('.summary-main-wrapper').css('top', '100px');
+          }
         }
-        else {
-          $('.summary-main-wrapper').css('position', 'fixed');
-          $('.summary-main-wrapper').css('top', '100px');
+        if (distance_top > 100) {
+          $('.summary-main-wrapper').removeAttr('style');
         }
-      }
-      if (distance_top > 100) {
-        $('.summary-main-wrapper').removeAttr('style');
       }
     }
   });
@@ -89,5 +91,15 @@ $(document).ready(function() {
     if ($(window).width() < 992) {
       $('.summary-main-wrapper').removeAttr('style');
     }
+    passengersResponsive();
   })
+  if ($(window).width() < 992 && typeof($('.p-title').html()) !== 'undefined') {
+    passengersResponsive();
+  }
 })
+
+function passengersResponsive () {
+  var res = $('.p-title').offset().top - $('.pp-no-input:last-child').offset().top;
+  var height = Math.abs(res)+30;
+  $('.passengers').css('height', height);
+}

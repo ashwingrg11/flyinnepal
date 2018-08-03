@@ -4,6 +4,9 @@
 .no-margin {
   margin: 0 !important;
 }
+.no-padding-left {
+  padding-left: 0 !important;
+}
 header {
   background-color: #b91431;
   min-height: 40px;
@@ -358,6 +361,130 @@ select::-ms-expand {
 /** booking confirm **/
 .confirm-title h2 {
   font-size: 25px;
+  padding-bottom: 15px;
 }
-
+.departure-info {
+  padding-bottom: 20px;
+}
+.return-info, .payments-info, .passenger-info {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.card-title {
+  font-weight: 600;
+  background: #b91532;
+  color: #fff;
+  padding: 10px 20px;
+}
+.info-title-section h4{
+  display: inline-block;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #0c7e7d;
+}
+.info-title-section > span {
+  margin-left: 5px;
+  font-size: 15px;
+}
+.info-items.list-inline {
+  display: flex;
+  overflow: auto;
+}
+.info-items.list-inline li {
+  width: 100%;
+  text-align: center;
+  color: #0c7e7d;
+  line-height: 20px;
+  background-image: url('../images/arrow.png');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding: 0 30px;
+  background-position: right;
+}
+.info-items.list-inline li:first-child, .info-items.list-inline li:last-child {
+  background-image: none;
+  padding: 0;
+}
+.info-items.list-inline li:last-child {
+  padding-top: 10px;
+}
+.payment-info ul li img {
+  height: 40px;
+}
+li.card-info-title {
+  background: #e7e7e7;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: -0.3px;
+  color: #017f7e;
+  padding: 10px;
+}
+li.card-info-title:hover {
+  border-color: rgb(231, 231, 231);
+}
+#booking-summary-title {
+  visibility: hidden;
+}
+li.airline-img {
+  width: 10% !important;
+}
+li.airline-img img {
+  width: 40px;
+}
+.passengers-wrapper {
+  color: #017f7e;
+  letter-spacing: -0.5px;
+}
+.content-item {
+  padding: 10px;
+}
+.passengers-wrapper h4 {
+  font-size: 17px;
+}
+.passengers-wrapper label, .passengers-wrapper select, .passengers-wrapper input {
+  color: #495057;
+  font-size: 12px;
+  padding: 0;
+}
+.passengers-wrapper label, .passengers-wrapper select, .passengers-wrapper input, .passengers-wrapper input:focus, .passengers-wrapper select:focus {
+  border: none;
+  border-bottom: 1px solid #aeaeae;
+  border-radius: 0;
+  outline: 0;
+  box-shadow: none;
+}
+.passengers-wrapper select {
+  height: 20px !important;
+}
+.inputs-wrapper {
+  padding: 5px 10px 0px 10px;
+  height: 35px;
+}
+input::-webkit-input-placeholder {
+  color: #495057 !important;
+}
+input::-moz-placeholder {
+  color: #495057 !important;
+}
+input:-ms-input-placeholder {
+  color: #495057 !important;
+}
+input::placeholder {
+  color: #495057 !important;
+}
+.common-input {
+  padding-top: 4px;
+}
+.pl-five {
+  padding-left: 5px !important;
+}
+.row.contact-input-wrapper {
+  padding: 0 10px;
+}
+.no-padding-lr {
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 15px;
+  padding-top: 5px;
+}
 /** booking confirm **/
