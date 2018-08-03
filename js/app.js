@@ -124,20 +124,34 @@ function deSelectMultipleCheckBoxes() {
     }
   });
   $("input[type=checkbox]").on('click', function() {
+    var $GRAND_TOTAL = $('span.grand-total');
     if($('.inp-dep').is(':checked') && $('.inp-ret').is(':checked')) {
       var $TOTAL = calculateGrandTotal();
-      $('span.grand-total').html($TOTAL);
+      $GRAND_TOTAL.html($TOTAL).removeClass('hide-total');
+    }
+    else if($('.inp-dep').is(':checked') && !$('.inp-ret').is(':checked')){
+        if(!$GRAND_TOTAL.hasClass('hide-total'))
+          $GRAND_TOTAL.addClass('hide-total');
+    }
+    else if(!$('.inp-dep').is(':checked') && $('.inp-ret').is(':checked')){
+        if(!$GRAND_TOTAL.hasClass('hide-total'))
+          $GRAND_TOTAL.addClass('hide-total');
+    }
+    else {
+      if(!$GRAND_TOTAL.hasClass('hide-total'))
+          $GRAND_TOTAL.addClass('hide-total');
     }
   });
 
 }
-
+//get fare price of return flight
 function getRetTotal() {
   var $CHECKBOX = $('input[type=checkbox]:checked'),
       $GET_RET_VALUE = $CHECKBOX.closest('tr').find('td:nth-child(7) span.ret-num-price').text(),
       $NUM_VALUE = parseInt($GET_RET_VALUE)||0;
       return $NUM_VALUE;
 }
+//calculate Grand Total
 function calculateGrandTotal() {
   var $DEP_SUM = getDeptTotal(),
       $RET_SUM = getRetTotal();
