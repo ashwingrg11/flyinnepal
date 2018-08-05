@@ -10,6 +10,9 @@
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
+  .info-items.list-inline li:last-child {
+    display: none;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -28,6 +31,13 @@
   }
   .contact-details {
     height: 230px;
+  }
+  .flights-table th:first-child, .flights-table th:nth-child(6), .flights-table td:first-child, .flights-table td:nth-child(6) {
+    display: none;
+  }
+  table.flights-table td, table.flights-table th {
+    padding: 10px 0;
+    font-size: 12px;
   }
 }
 
@@ -51,6 +61,13 @@
   }
   .contact-details {
     height: 155px;
+  }
+  ul.info-items li.airline-img {
+    display: none !important;
+  }
+  .info-items.list-inline li {
+    background-image: none !important;
+    padding: 0 3px;
   }
 }
 

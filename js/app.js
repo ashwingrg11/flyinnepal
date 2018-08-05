@@ -196,13 +196,13 @@ $(document).ready(function() {
     }
     passengersResponsive();
   })
-  if ($(window).width() < 992 && typeof($('.p-title').html()) !== 'undefined') {
-    passengersResponsive();
-  }
+  passengersResponsive();
 })
 
 function passengersResponsive () {
-  var res = $('.p-title').offset().top - $('.pp-no-input:last-child').offset().top;
-  var height = Math.abs(res)+30;
-  $('.passengers').css('height', height);
+  if ($(window).width() < 992 && typeof($('.p-title').html()) !== 'undefined') {
+    var res = $('.p-title').offset().top - $('.pp-no-input:last-child').offset().top;
+    var height = Math.abs(res)+30;
+    $('.passengers').css('height', height);
+  }
 }
