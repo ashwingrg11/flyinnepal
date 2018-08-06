@@ -194,15 +194,5 @@ $(document).ready(function() {
     if ($(window).width() < 992) {
       $('.summary-main-wrapper').removeAttr('style');
     }
-    //passengersResponsive();
   })
-  //passengersResponsive();
 })
-
-function passengersResponsive () {
-  if ($(window).width() < 992 && typeof($('.p-title').html()) !== 'undefined') {
-    var res = $('.p-title').offset().top - $('.pp-no-input:last-child').offset().top;
-    var height = Math.abs(res)+30;
-    $('.passengers').css('height', height);
-  }
-}
