@@ -194,9 +194,9 @@ $(document).ready(function() {
     if ($(window).width() < 992) {
       $('.summary-main-wrapper').removeAttr('style');
     }
-    passengersResponsive();
+    //passengersResponsive();
   })
-  passengersResponsive();
+  //passengersResponsive();
 })
 
 function passengersResponsive () {

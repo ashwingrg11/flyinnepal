@@ -13,6 +13,18 @@
   .info-items.list-inline li:last-child {
     display: none;
   }
+  .passenger-individual {
+    height: 250px !important;
+  }
+  .passenger-individual select, #contact-select {
+    margin-left: -4px !important;
+  }
+}
+
+@media (width: 768px) {
+  .col-md-8.no-padding.passenger-details-wrapper {
+    margin-top: -210px !important;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -74,6 +86,15 @@
   }
   .passenger-details-wrapper {
     margin-top: -210px;
+  }
+  .passenger-individual {
+    height: 100px;
+  }
+  .passenger-individual > div > div.row.inputs-wrapper {
+    padding-left: 15px;
+  }
+  .passenger-individual > div > div.row.inputs-wrapper > div:first-child {
+    padding-left: 0;
   }
 }
 
