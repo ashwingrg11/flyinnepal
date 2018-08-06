@@ -491,3 +491,6 @@ input::placeholder {
   padding-top: 5px;
 }
 /** booking confirm **/
+.passenger-details-wrapper {
+  margin-top: -126px;
+}

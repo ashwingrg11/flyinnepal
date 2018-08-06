@@ -39,6 +39,9 @@
     padding: 10px 0;
     font-size: 12px;
   }
+  .passenger-details-wrapper {
+    margin-top: 20px !important;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -68,6 +71,9 @@
   .info-items.list-inline li {
     background-image: none !important;
     padding: 0 3px;
+  }
+  .passenger-details-wrapper {
+    margin-top: -210px;
   }
 }
 
