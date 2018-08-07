@@ -194,5 +194,30 @@ $(document).ready(function() {
     if ($(window).width() < 992) {
       $('.summary-main-wrapper').removeAttr('style');
     }
+    pullPassengers();
   })
+  pullPassengers();
 })
+
+function pullPassengers() {
+  if ($('.flight-info').length === 1) {
+    console.log($(window).width());
+    if ($(window).width() > 992){
+    // if (!$('.passenger-details-wrapper').attr('style')) {
+      $('.passenger-details-wrapper').css('margin-top', '-140px');
+    // }
+    }
+    else if ($(window).width() > 768) {
+      console.log('inside > 768');
+
+      $('.passenger-details-wrapper').css('margin-top', '-200px');
+    }
+    else if ($(window).width() <= 768) {
+      console.log('inside < 768');
+      $('.passenger-details-wrapper').removeAttr("style");
+    }
+  }
+  // else {
+  //   $('.passenger-details-wrapper').removeAttr('style');
+  // }
+}

@@ -366,7 +366,7 @@ select::-ms-expand {
   font-size: 25px;
   padding-bottom: 15px;
 }
-.departure-info {
+.flight-info {
   padding-bottom: 20px;
 }
 .return-info, .payments-info, .passenger-info {
@@ -491,6 +491,15 @@ input::placeholder {
   padding-top: 5px;
 }
 /** booking confirm **/
-.passenger-details-wrapper {
+/* .passenger-details-wrapper {
   margin-top: -126px;
+} */
+ul.total-amount-wrapper {
+  padding: 10px 20px;
+  list-style: none;
+  font-weight: 600;
+  font-size: 13px;
+}
+ul.total-amount-wrapper span:nth-child(2) {
+  float: right;
 }

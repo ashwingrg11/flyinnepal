@@ -22,9 +22,9 @@
 }
 
 @media (width: 768px) {
-  .col-md-8.no-padding.passenger-details-wrapper {
+  /* .col-md-8.no-padding.passenger-details-wrapper {
     margin-top: -210px !important;
-  }
+  } */
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -51,9 +51,9 @@
     padding: 10px 0;
     font-size: 12px;
   }
-  .passenger-details-wrapper {
+  /* .passenger-details-wrapper {
     margin-top: 20px !important;
-  }
+  } */
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -84,9 +84,9 @@
     background-image: none !important;
     padding: 0 3px;
   }
-  .passenger-details-wrapper {
+  /* .passenger-details-wrapper {
     margin-top: -210px;
-  }
+  } */
   .passenger-individual {
     height: 100px;
   }
