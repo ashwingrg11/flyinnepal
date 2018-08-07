@@ -369,6 +369,10 @@ select::-ms-expand {
 .flight-info {
   padding-bottom: 20px;
 }
+.flight-info .info-title-section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .return-info, .payments-info, .passenger-info {
   margin-top: 20px;
   padding-bottom: 20px;
@@ -420,7 +424,7 @@ li.card-info-title {
   font-size: 17px;
   letter-spacing: -0.3px;
   color: #017f7e;
-  padding: 10px;
+  padding: 15px 10px;
 }
 li.card-info-title:hover {
   border-color: rgb(231, 231, 231);
@@ -439,7 +443,7 @@ li.airline-img img {
   letter-spacing: -0.5px;
 }
 .content-item {
-  padding: 10px;
+  padding: 25px 10px;
 }
 .passengers-wrapper h4 {
   font-size: 17px;
@@ -502,4 +506,7 @@ ul.total-amount-wrapper {
 }
 ul.total-amount-wrapper span:nth-child(2) {
   float: right;
+}
+li.booking-summary-title {
+  display: none;
 }

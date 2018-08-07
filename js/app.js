@@ -162,6 +162,7 @@ $(document).ready(function() {
   init_togglemenu();
   initFlightToggleMenu();
   deSelectMultipleCheckBoxes();
+  $('li.booking-summary-title').eq(0).show();
   $(window).scroll(function () {
     if (typeof $('.departure-flights').html() !== 'undefined') {
       if ($(window).width() > 992) {
@@ -194,30 +195,25 @@ $(document).ready(function() {
     if ($(window).width() < 992) {
       $('.summary-main-wrapper').removeAttr('style');
     }
-    pullPassengers();
   })
-  pullPassengers();
 })
 
-function pullPassengers() {
-  if ($('.flight-info').length === 1) {
-    console.log($(window).width());
-    if ($(window).width() > 992){
-    // if (!$('.passenger-details-wrapper').attr('style')) {
-      $('.passenger-details-wrapper').css('margin-top', '-140px');
-    // }
-    }
-    else if ($(window).width() > 768) {
-      console.log('inside > 768');
-
-      $('.passenger-details-wrapper').css('margin-top', '-200px');
-    }
-    else if ($(window).width() <= 768) {
-      console.log('inside < 768');
-      $('.passenger-details-wrapper').removeAttr("style");
-    }
-  }
-  // else {
-  //   $('.passenger-details-wrapper').removeAttr('style');
+// function pullPassengers() {
+  // if ($('.flight-info').length === 1) {
+  //   console.log($(window).width());
+  //   if ($(window).width() > 992){
+  //   // if (!$('.passenger-details-wrapper').attr('style')) {
+  //     $('.passenger-details-wrapper').css('margin-top', '-140px');
+  //   // }
+  //   }
+  //   else if ($(window).width() > 768) {
+  //     console.log('inside > 768');
+  //
+  //     $('.passenger-details-wrapper').css('margin-top', '-200px');
+  //   }
+  //   else if ($(window).width() <= 768) {
+  //     console.log('inside < 768');
+  //     $('.passenger-details-wrapper').removeAttr("style");
+  //   }
   // }
-}
+// }
